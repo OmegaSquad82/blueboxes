@@ -25,6 +25,7 @@ neovim
 npm
 opentofu
 plocate
+pulumi
 python3
 ripgrep
 speedtest-cli
