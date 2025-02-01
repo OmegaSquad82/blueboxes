@@ -9,9 +9,11 @@ on:
       - main
     paths-ignore:
       - '.github/**'
-      - '**.md'
+      - "**.md"
+      - "**/.gitkeep"
+      - "renovate.json"
   schedule:
-    - cron: '0 0 * * TUE'
+    - cron: '5 0 * * *'
 
 env:
     IMAGE_TAGS: latest
