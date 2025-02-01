@@ -1,5 +1,14 @@
 # Changelog
 
+## [1.2.0](https://github.com/OmegaSquad82/blueboxes/compare/v1.1.0...v1.2.0) (2025-02-01)
+
+
+### Features
+
+* add bash-completion, jq, k0sctl, kubectl, yq-go ([e590d1d](https://github.com/OmegaSquad82/blueboxes/commit/e590d1dbb7d497458948e159ee440f880c72a3c7))
+* add opentofu ([a39d352](https://github.com/OmegaSquad82/blueboxes/commit/a39d352aaf282e2412c8a9945b302ec4cb7b0e0b))
+* add pulumi ([6ac9ad4](https://github.com/OmegaSquad82/blueboxes/commit/6ac9ad4a0bf7105b65c7dceecefadbaa838fe18c))
+
 ## [1.1.0](https://github.com/OmegaSquad82/blueboxes/compare/v1.0.0...v1.1.0) (2025-02-01)
 
 
