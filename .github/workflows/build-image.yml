@@ -13,7 +13,11 @@ on:
       - "**/.gitkeep"
       - "renovate.json"
   schedule:
-    - cron: '5 0 * * *'
+    - cron: '5 0 * * 2,4,6' # build at 00:05 UTC on Tue, Thu, Sat
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref || github.run_id }}
+  cancel-in-progress: true
 
 env:
     IMAGE_TAGS: latest
