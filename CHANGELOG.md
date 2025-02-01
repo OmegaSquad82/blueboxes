@@ -1,5 +1,14 @@
 # Changelog
 
+## 1.0.0 (2025-02-01)
+
+
+### Features
+
+* build nightly ([e0f8d57](https://github.com/OmegaSquad82/blueboxes/commit/e0f8d574b3f3d2621e994dd55325570f074663a0))
+* do not build on ci changes ([0b6a7ab](https://github.com/OmegaSquad82/blueboxes/commit/0b6a7ab1ea36c0cd025554ea165ac93219009dbe))
+* do not trigger vuln-scan on ci change ([e7853a9](https://github.com/OmegaSquad82/blueboxes/commit/e7853a9c19821e97750133ea1a7fe9d8e7791472))
+
 ## [1.2.0](https://github.com/ublue-os/boxkit/compare/v1.1.0...v1.2.0) (2025-01-04)
 
 
