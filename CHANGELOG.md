@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.1.0](https://github.com/OmegaSquad82/blueboxes/compare/v1.0.0...v1.1.0) (2025-02-01)
+
+
+### Features
+
+* build on Tuesdays, Thursdays and Saturdays ([b12b7de](https://github.com/OmegaSquad82/blueboxes/commit/b12b7de3a16d6659dec2759a4f35ecae49d2460a))
+
+
+### Bug Fixes
+
+* align with build and sort things ([1b180b1](https://github.com/OmegaSquad82/blueboxes/commit/1b180b1cc227f2a376d0491a27e68b5ae32268b4))
+
 ## 1.0.0 (2025-02-01)
 
 
