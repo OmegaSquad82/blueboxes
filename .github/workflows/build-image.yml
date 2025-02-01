@@ -1,4 +1,4 @@
-name: build-boxkit
+name: build-image
 on:
   workflow_dispatch: # allow manually triggering builds
   pull_request:
@@ -7,10 +7,13 @@ on:
   push:
     branches:
       - main
-    paths-ignore: # don't rebuild on documentation change
-      - '**.md'
+    paths-ignore:
+      - '.github/**'
+      - "**.md"
+      - "**/.gitkeep"
+      - "renovate.json"
   schedule:
-    - cron: '0 0 * * TUE'
+    - cron: '5 0 * * *'
 
 env:
     IMAGE_TAGS: latest
