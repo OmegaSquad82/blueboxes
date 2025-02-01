@@ -1,4 +1,4 @@
-name: build-boxkit
+name: build-image
 on:
   workflow_dispatch: # allow manually triggering builds
   pull_request:
@@ -7,7 +7,8 @@ on:
   push:
     branches:
       - main
-    paths-ignore: # don't rebuild on documentation change
+    paths-ignore:
+      - '.github/**'
       - '**.md'
   schedule:
     - cron: '0 0 * * TUE'
