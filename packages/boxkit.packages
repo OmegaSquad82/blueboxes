@@ -1,7 +1,8 @@
 age
 atuin
-btop
+bash-completion
 bat
+btop
 chezmoi
 clipboard
 cosign
@@ -12,7 +13,10 @@ ffmpeg
 fzf
 github-cli
 helix
+jq
 just
+k0sctl
+kubectl
 make
 micro
 ncdu
@@ -26,5 +30,6 @@ speedtest-cli
 starship
 vimdiff
 wl-clipboard
+yq-go
 zellij
 zstd
