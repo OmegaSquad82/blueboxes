@@ -2,11 +2,9 @@ name: build-image
 on:
   workflow_dispatch: # allow manually triggering builds
   push:
-    branches:
-      - main
     paths-ignore:
-      - 'release-please.yml'
-      - 'vulnerability-scan.yml'
+      - '**/release-please.yml'
+      - '**/vulnerability-scan.yml'
       - "**.md"
       - "**/.gitkeep"
       - "renovate.json"
@@ -110,3 +108,7 @@ jobs:
       - name: Echo outputs
         run: |
           echo "${{ toJSON(steps.push.outputs) }}"
+
+      # Free and Open Source Software license scanning
+      - name: Run GitHub Action for ORT
+        uses: oss-review-toolkit/ort-ci-github-action@v1
