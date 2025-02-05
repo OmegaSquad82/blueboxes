@@ -3,6 +3,7 @@ atuin
 bash-completion
 bat
 btop
+byobu
 chezmoi
 clipboard
 cosign
@@ -13,6 +14,7 @@ ffmpeg
 fzf
 github-cli
 helix
+htop
 jq
 just
 k0sctl
