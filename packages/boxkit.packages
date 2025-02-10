@@ -26,6 +26,7 @@ ncurses
 neovim
 npm
 opentofu
+pdfgrep
 plocate
 pulumi
 python3
