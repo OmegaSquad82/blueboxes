@@ -107,7 +107,3 @@ jobs:
       - name: Echo outputs
         run: |
           echo "${{ toJSON(steps.push.outputs) }}"
-
-      # Free and Open Source Software license scanning
-      - name: Run GitHub Action for ORT
-        uses: oss-review-toolkit/ort-ci-github-action@v1
