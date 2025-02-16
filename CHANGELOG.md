@@ -1,5 +1,36 @@
 # Changelog
 
+## [1.2.0](https://github.com/OmegaSquad82/blueboxes/compare/v1.1.0...v1.2.0) (2025-02-16)
+
+
+### Features
+
+* add bash-completion, jq, k0sctl, kubectl, yq-go ([e590d1d](https://github.com/OmegaSquad82/blueboxes/commit/e590d1dbb7d497458948e159ee440f880c72a3c7))
+* add opentofu ([a39d352](https://github.com/OmegaSquad82/blueboxes/commit/a39d352aaf282e2412c8a9945b302ec4cb7b0e0b))
+* add pdfgrep to the flock ([4efc018](https://github.com/OmegaSquad82/blueboxes/commit/4efc01890f6c9f4d51ac5af830de01bf4e5a4382))
+* add pulumi ([6ac9ad4](https://github.com/OmegaSquad82/blueboxes/commit/6ac9ad4a0bf7105b65c7dceecefadbaa838fe18c))
+* add swayimg to the flock ([84c50da](https://github.com/OmegaSquad82/blueboxes/commit/84c50dafc76c917256d0dc270377e446bae48b25))
+* adding byobu and htop to boxkit packages ([4e8e918](https://github.com/OmegaSquad82/blueboxes/commit/4e8e918ebae3fec8895007b687f0cebfc0ff0e98))
+* Delete ContainerFiles/fedora-example ([313c763](https://github.com/OmegaSquad82/blueboxes/commit/313c76322a433e827633f9e0f38ab038911921b9))
+* deliver arkade ([90eed0c](https://github.com/OmegaSquad82/blueboxes/commit/90eed0cbd2d8573702a43a192313175684565c6f))
+* lower frequency of builds to once per week on Mondays ([861a8c2](https://github.com/OmegaSquad82/blueboxes/commit/861a8c2753d020a6e810cb89f918d9239e0866c7))
+* lower scan frequency to once daily ([02cf695](https://github.com/OmegaSquad82/blueboxes/commit/02cf69567e0ac8f25e19bba83c17537aa528c7cc))
+* use oss-review-toolkit/ort-ci-github-action@v1 ([1f47461](https://github.com/OmegaSquad82/blueboxes/commit/1f47461ab0fc66c8c790b53505c3cea73d3d8086))
+
+
+### Bug Fixes
+
+* build-image should run when it has changed ([0029a5f](https://github.com/OmegaSquad82/blueboxes/commit/0029a5fdff3f407253c113fc7b1594d5dc534cae))
+* do not scan for vulnerabilities on build ci change ([10c0154](https://github.com/OmegaSquad82/blueboxes/commit/10c015420ac10ee0f3e06f9bb17383ec8141bcfb))
+* formatting of cron string and comment was off ([5555abf](https://github.com/OmegaSquad82/blueboxes/commit/5555abff193ad80518c60960dfcf65b7b1e5ab6d))
+* ignore other workflows but not oneself ([dcf959d](https://github.com/OmegaSquad82/blueboxes/commit/dcf959da10bc072bfc493dd084a3d224bd7cb0c2))
+* must find non-build workflows in a (nested) subdirectory ([a599844](https://github.com/OmegaSquad82/blueboxes/commit/a599844aa0baea88d89031e84654b3dc62e0754e))
+* must find non-vuln workflows in a (nested) subdirectory ([9a9758f](https://github.com/OmegaSquad82/blueboxes/commit/9a9758fae777d93874b9ed12c5b18bdb43e7b711))
+* remove ORT from build pipeline ([74e095b](https://github.com/OmegaSquad82/blueboxes/commit/74e095bc01bab1cdba28ed7eb1662189156b6b9f))
+* stall vuln-scan for up to 1min ([4159525](https://github.com/OmegaSquad82/blueboxes/commit/4159525a3f527c6cbdd2eee44ae3fca88299ba6e))
+* Update build-image.yml ([9bc7a60](https://github.com/OmegaSquad82/blueboxes/commit/9bc7a608a6ed1eea0614d7a0ca2cc87a877de558))
+* use ORT GitHub Action's default toolset ([172d1b8](https://github.com/OmegaSquad82/blueboxes/commit/172d1b8d47471e6ad7698b31cbf350a9863670f2))
+
 ## [1.1.0](https://github.com/OmegaSquad82/blueboxes/compare/v1.0.0...v1.1.0) (2025-02-01)
 
 
