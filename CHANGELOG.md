@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.3.0](https://github.com/OmegaSquad82/blueboxes/compare/v1.2.0...v1.3.0) (2025-05-25)
+
+
+### Features
+
+* add podman-docker for funsies but not profits ([45a01e4](https://github.com/OmegaSquad82/blueboxes/commit/45a01e4631b0ccbef985d0411f15e927ed33173e))
+
+
+### Bug Fixes
+
+* remove podman-docker, this reverts Commit d352119 ([19d1469](https://github.com/OmegaSquad82/blueboxes/commit/19d1469f88ac1188d8580f4a5fbfd9c3dfc6e8f2))
+
 ## [1.2.0](https://github.com/OmegaSquad82/blueboxes/compare/v1.1.0...v1.2.0) (2025-02-16)
 
 
