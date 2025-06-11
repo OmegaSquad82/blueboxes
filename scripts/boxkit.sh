@@ -1,4 +1,5 @@
 #!/bin/sh
+set -euo pipefail 
 
 # Symlink distrobox shims
 ./distrobox-shims.sh
