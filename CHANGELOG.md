@@ -1,5 +1,20 @@
 # Changelog
 
+## [1.3.0](https://github.com/OmegaSquad82/blueboxes/compare/v1.2.0...v1.3.0) (2025-06-11)
+
+
+### Features
+
+* add go language compiler, documentation and vim-go plug-in ([24a00d6](https://github.com/OmegaSquad82/blueboxes/commit/24a00d6ba7d54af9f43fd6eab81c9140bf6035f9))
+* add podman-docker for funsies but not profits ([45a01e4](https://github.com/OmegaSquad82/blueboxes/commit/45a01e4631b0ccbef985d0411f15e927ed33173e))
+* directly push with podman as zstd:chunked ([e70588e](https://github.com/OmegaSquad82/blueboxes/commit/e70588e275f7e94556463099710de6155e0ecefc))
+
+
+### Bug Fixes
+
+* remove podman-docker, this reverts Commit d352119 ([19d1469](https://github.com/OmegaSquad82/blueboxes/commit/19d1469f88ac1188d8580f4a5fbfd9c3dfc6e8f2))
+* set bash to strict mode ([4a2a736](https://github.com/OmegaSquad82/blueboxes/commit/4a2a736514eba66f02034ca6c7730f3303af3a09))
+
 ## [1.2.0](https://github.com/OmegaSquad82/blueboxes/compare/v1.1.0...v1.2.0) (2025-02-16)
 
 
