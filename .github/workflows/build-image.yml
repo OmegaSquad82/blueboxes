@@ -100,8 +100,8 @@ jobs:
           username: ${{ env.REGISTRY_USER }}
           password: ${{ env.REGISTRY_PASSWORD }}
           extra-args: |
-            --remove-signatures \
-            --compression-format=zstd:chunked \
+            --remove-signatures
+            --compression-format=zstd:chunked
             --sign-by-sigstore-private-key=cosign.key
 
 
