@@ -13,7 +13,7 @@ eza
 ffmpeg
 fzf
 github-cli
-go-docs
+go-doc
 helix
 htop
 jq
