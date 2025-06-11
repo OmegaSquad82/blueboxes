@@ -68,8 +68,10 @@ jobs:
           string: ${{ env.IMAGE_REGISTRY }}
 
       - run: podman history ${{ steps.build.outputs.image }}:${{ steps.build.outputs.tags }}
+        if: github.event_name != 'pull_request'
+        id: history
 
-      - name: podman push ${{ steps.registry_case.outputs.lowercase }}/${{ steps.build.outputs.image }}:${{ steps.build.outputs.tags }}
+      - name: podman push ${{ steps.registry_case.outputs.lowercase }}/${{ steps.build.outputs.image-with-tag }}
         if: github.event_name != 'pull_request'
         id: push
         env:
@@ -97,4 +99,4 @@ jobs:
             --sign-by-sigstore-private-key=cosign.key \
             --creds="${REGISTRY_USER}:${REGISTRY_PASSWORD}" \
             ${{ steps.build.outputs.image }}:${{ steps.build.outputs.tags }} \
-            ${{ steps.registry_case.outputs.lowercase }}/${{ steps.build.outputs.image }}:${{ steps.build.outputs.tags }}
+            ${{ steps.registry_case.outputs.lowercase }}/${{ steps.build.outputs.image-with-tag }}
