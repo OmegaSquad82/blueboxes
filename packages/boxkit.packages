@@ -13,6 +13,7 @@ eza
 ffmpeg
 fzf
 github-cli
+go-docs
 helix
 htop
 jq
@@ -35,6 +36,7 @@ speedtest-cli
 starship
 swayimg
 vimdiff
+vim-go
 wl-clipboard
 yq-go
 zellij
