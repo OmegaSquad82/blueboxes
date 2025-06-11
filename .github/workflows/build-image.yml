@@ -58,7 +58,7 @@ jobs:
           tags: ${{ env.IMAGE_TAGS }}
           labels: ${{ steps.meta.outputs.labels }}
           oci: true
-          
+
       # Workaround bug where capital letters in your GitHub username make it impossible to push to GHCR.
       # https://github.com/macbre/push-to-ghcr/issues/12
       - name: Lowercase Registry
@@ -67,7 +67,14 @@ jobs:
         with:
           string: ${{ env.IMAGE_REGISTRY }}
 
-      - name: Configure Podman
+      - run: podman history ${{ steps.build.outputs.image }}:${{ steps.build.outputs.tags }}
+
+      - name: podman push ${{ steps.registry_case.outputs.lowercase }}/${{ steps.build.outputs.image }}:${{ steps.build.outputs.tags }}
+        if: github.event_name != 'pull_request'
+        id: push
+        env:
+          REGISTRY_USER: ${{ github.actor }}
+          REGISTRY_PASSWORD: ${{ github.token }}
         run: |
           set -euo pipefail
 
@@ -84,27 +91,11 @@ jobs:
           default-docker:
             use-sigstore-attachments: true
           EOF
-          
-      # Push the image to GHCR (Image Registry)
-      - name: Push To GHCR
-        uses: redhat-actions/push-to-registry@v2
-        if: github.event_name != 'pull_request'
-        id: push
-        env:
-          REGISTRY_USER: ${{ github.actor }}
-          REGISTRY_PASSWORD: ${{ github.token }}
-        with:
-          image: ${{ steps.build.outputs.image }}
-          tags: ${{ steps.build.outputs.tags }}
-          registry: ${{ steps.registry_case.outputs.lowercase }}
-          username: ${{ env.REGISTRY_USER }}
-          password: ${{ env.REGISTRY_PASSWORD }}
-          extra-args: |
-            --remove-signatures
-            --compression-format=zstd:chunked
-            --sign-by-sigstore-private-key="${HOME}"/cosign.key
 
-      - name: Echo outputs
-        run: |
-          echo "${{ toJSON(steps.build.outputs) }}" | jq .
-          echo "${{ toJSON(steps.push.outputs) }}" | jq .
+          podman push
+            --remove-signatures \
+            --compression-format=zstd:chunked \
+            --sign-by-sigstore-private-key="${HOME}"/cosign.key \
+            --creds="${{ env.REGISTRY_USER }}:${{ env.REGISTRY_PASSWORD }}" \
+            ${{ steps.build.outputs.image }}:${{ steps.build.outputs.tags }} \
+            ${{ steps.registry_case.outputs.lowercase }}/${{ steps.build.outputs.image }}:${{ steps.build.outputs.tags }}
