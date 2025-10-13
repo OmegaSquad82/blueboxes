@@ -2,7 +2,6 @@ age
 atuin
 bash-completion
 bat
-btop
 byobu
 chezmoi
 clipboard
@@ -15,7 +14,6 @@ fzf
 github-cli
 go-doc
 helix
-htop
 jq
 just
 k0sctl
@@ -34,7 +32,6 @@ python3
 ripgrep
 speedtest-cli
 starship
-swayimg
 vimdiff
 wl-clipboard
 yq-go
