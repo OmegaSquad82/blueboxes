@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.4.0](https://github.com/OmegaSquad82/blueboxes/compare/v1.3.0...v1.4.0) (2025-10-16)
+
+
+### Features
+
+* cleanup ([f3676ff](https://github.com/OmegaSquad82/blueboxes/commit/f3676ff4eb68f8393e27b5ab723f595b7e0f6333))
+* enable automerge for Renovate configuration ([2a709ce](https://github.com/OmegaSquad82/blueboxes/commit/2a709ce12fe2d9665ba8c358954ac10823e082e9))
+
 ## [1.3.0](https://github.com/OmegaSquad82/blueboxes/compare/v1.2.0...v1.3.0) (2025-06-11)
 
 
